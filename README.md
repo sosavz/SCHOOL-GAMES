@@ -1,11 +1,19 @@
-# Playroom — private game updates
+# Playroom — UNO and Mensch ärgere dich nicht
 
-UNO and Mensch ärgere dich nicht for friends.
+Playroom lets friends play UNO and Mensch ärgere dich nicht together online.
 
-Get the initial Windows ZIP from the host. Accept your repository invitation, extract the complete game folder, and run **Set up private updates.cmd** once using your invited GitHub account. Then open **Start UNO Together.cmd** to check for updates and play.
+## Getting started
 
-Updates download from this private repository even while the host PC is offline. Multiplayer still needs a running host and a reachable network connection.
+Ask the host for the complete **UNO Together Windows.zip** and extract the entire folder. Everyone opens **Start UNO Together.cmd**. The host creates a room; friends join by entering its six-digit code.
 
-The launcher reads `latest.json` and verifies the versioned ZIP under `builds/` before installing. Local preferences, reconnect data and the runtime are preserved. No account credentials are distributed here.
+## Automatic updates
 
-Future versions must be published here before friends can receive them. The owner can ask the game-development chat to publish the next tested release.
+The game checks this public repository for a verified update whenever it starts. Friends do **not** need GitHub accounts, sign-ins, or setup. The host PC can be offline when updates are downloaded. Keep the complete game folder so the bundled runtime stays in place.
+
+Multiplayer still requires a reachable game host. A public update download does not make a private home network reachable from other networks; use the same LAN or set up a suitable VPN/port-forwarding arrangement.
+
+## Privacy
+
+Update downloads contain the game's code, designs, sounds, and guides. Personal saves and preferences remain on each PC and are not uploaded by the game.
+
+This repository is public, including its commit history and earlier update builds.
